@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0>
+		<title>Andrei's Website</title>
+		<link rel="stylesheet" 
+		href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" 
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+		integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+		
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans
+		+Pro:300,900&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="style.css">
+		
+		<!--
+		<style>
+			body {
+				background-image: url("pattern.jpg");
+				background-color: #cccccc;
+			}
+		</style>
+		-->
+	</head>
+	<body>
+		<header>
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact me</a></li>
+                </ul>
+            </nav>
+        </header>
+		
+		<!-- Introduction -->
+		<section class="intro" id="home">
+			<h1 class="section__title section__title--intro">
+				Hello, I am <strong>Andrei Albu</strong>
+			</h1>
+			<p class="section__subtitle section__subtitle--intro">Student</p>
+			<img src="pfp.jpg" alt="a picture of me" class="intro__img">
+		</section>
+		
+		<!-- My Project -->
+		<section class="my-projects" id="projects">
+			<h2 class="section__title section__title--projects">What I do!!!</h2>
+			<div class="projects">
+				<div class="project">
+					<h3>Lab1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+					consequat.</p>
+				</div> <!-- Close service div -->
+				
+				<div class="project">
+					<h3>Lab2</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+					consequat.</p>
+				</div> <!-- Close service div -->
+				
+				<div class="project">
+					<h3>Lab3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+					consequat.</p>
+				</div> <!-- Close service div -->
+			</div> <!-- Close services div -->
+			
+			<!-- Maybe dont need this -->
+			<a href="https://github.com/andreialbu03?tab=repositories" class="btn">My Projects</a>
+		</section>
+		
+		<!-- About me -->
+		<section class="about-me" id="about">
+			<h2 class="section__title section__title--about">Who I am</h2>
+			<p class="section__subtitle section__subtitle--about">Student at Abbey Park High School</p>
+			
+			<div class="about-me__body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat./p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat./p>
+			</div>
+			
+			<img src="aboutMePic.jpg" alt="picture of" class="about-me__img">
+		</section>
+		
+		
+		<!-- Footer -->
+		<footer class="footer" id="contact">
+			<a href="mailto:andrei.albu03@gmail.com" class="footer__link">andrei.albu03@gmail.com</a>
+			<ul class="social-list">
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://www.linkedin.com/">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+				</li>
+                <li class="social-list__item">
+					<a class="social-list__link" href="https://www.instagram.com/andrei.albuu/">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+                <li class="social-list__item">
+					<a class="social-list__link" href="https://twitter.com">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+                <li class="social-list__item">
+					<a class="social-list__link" href="https://github.com/andreialbu03">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+		
+		<!-- JavaScript -->
+		
+		<script src="index.js"></script>
+		
+	</body>
+</html>
