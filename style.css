@@ -274,7 +274,7 @@ header {
 
 .my-projects {
 	background-color: var(--clr-light);
-	background-image: url(pattern.jpg);
+	/* background-image: url(pattern.jpg); */
 	
 	color: var(--clr-dark);
 	text-align: center;
