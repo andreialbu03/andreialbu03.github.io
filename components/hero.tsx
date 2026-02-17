@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Github, Linkedin, ExternalLink } from "lucide-react";
 
 export function Hero() {
@@ -66,12 +65,10 @@ export function Hero() {
         {/* Profile image */}
         <div className="relative shrink-0">
           <div className="relative h-64 w-64 overflow-hidden rounded-2xl border-2 border-accent/20 sm:h-72 sm:w-72">
-            <Image
+            <img
               src="/images/pfp.jpg"
               alt="Andrei Albu"
-              fill
-              className="object-cover object-top"
-              priority
+              className="h-full w-full object-cover object-top"
             />
           </div>
           <div className="absolute -inset-1 -z-10 rounded-2xl bg-accent/10 blur-sm" />

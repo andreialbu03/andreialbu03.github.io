@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export function About() {
   return (
     <section id="about" className="px-6 py-24">
@@ -61,11 +59,10 @@ export function About() {
           <div className="shrink-0">
             <div className="group relative">
               <div className="relative h-72 w-60 overflow-hidden rounded-xl">
-                <Image
+                <img
                   src="/images/me-talking.jpeg"
                   alt="Andrei Albu presenting"
-                  fill
-                  className="object-cover transition-all grayscale group-hover:grayscale-0"
+                  className="h-full w-full object-cover transition-all grayscale group-hover:grayscale-0"
                 />
               </div>
               <div className="absolute -inset-2 -z-10 rounded-xl border-2 border-accent/30 transition-all group-hover:translate-x-1 group-hover:translate-y-1" />
