@@ -11,27 +11,26 @@ export function About() {
         <div className="flex flex-col gap-12 md:flex-row md:gap-16">
           <div className="flex-1">
             <p className="leading-relaxed text-muted-foreground">
-              I&apos;m an ambitious and driven computer science student with a
-              passion for cloud technologies and software development. Currently
-              in my fourth year at{" "}
+              I&apos;m an ambitious and driven computer science graduate with a
+              passion for cloud technologies and software development. I&apos;ve
+              completed my degree at{" "}
               <span className="text-foreground font-medium">
                 McMaster University
               </span>{" "}
-              /{" "}
+              and{" "}
               <span className="text-foreground font-medium">
                 Athabasca University
               </span>
-              , I&apos;ve been building real-world experience through multiple
-              roles at Deloitte working on cloud infrastructure and API
-              development.
+              , and I&apos;ve built real-world experience through multiple roles
+              at Deloitte working on cloud infrastructure and API development.
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
               I&apos;ve attended hackathons like{" "}
               <span className="text-accent">Hack the North 2021</span>, and I
               enjoy pushing myself to learn new technologies and tackle complex
-              problems. Outside of tech, you can find me playing basketball,
-              working out, or reading about the latest developments in
-              information technology.
+              problems. Outside of tech, you can find me rock climbing, which I
+              love because it combines physical activity with
+              problem-solving—much like coding itself.
             </p>
             <p className="mt-6 text-sm text-muted-foreground">
               Here are some technologies I&apos;ve been working with:

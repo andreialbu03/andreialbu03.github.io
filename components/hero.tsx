@@ -14,13 +14,9 @@ export function Hero() {
             <span className="text-balance">I build things for the cloud.</span>
           </h2>
           <p className="mt-6 max-w-lg leading-relaxed text-muted-foreground">
-            Cloud Developer at{" "}
-            <span className="text-foreground font-medium">Deloitte</span> and
-            Computer Science student at{" "}
-            <span className="text-foreground font-medium">
-              McMaster University
-            </span>
-            . I specialize in cloud infrastructure, API development, and DevOps
+            Tech Software Consultant at{" "}
+            <span className="text-foreground font-medium">Deloitte</span>. I
+            specialize in API development, cloud infrastructure, and DevOps
             automation.
           </p>
 

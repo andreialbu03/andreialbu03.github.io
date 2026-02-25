@@ -1,26 +1,48 @@
 const experiences = [
   {
+    year: "2025",
+    title: "Tech Software Consultant",
+    company: "Deloitte",
+    bullets: [
+      "Built the initial RCSA (Risk and Control Self-Assessment) proof of concept, securing a $1M engagement",
+      "Led development of an end-to-end Python-based RCSA web application deployed on Azure App Service, reducing manual assessment effort by 55%",
+      "Designed API endpoints leveraging GPT-4 mini hosted on Azure AI Foundry to automate process map analysis and risk mapping",
+      "Built an Azure OpenAI-powered validation engine that assessed 665+ controls against enterprise governance standards, reducing QA review time by 60%",
+      "Increased control rationalization efficiency by 30% using DBSCAN-based clustering",
+    ],
+    tags: ["Python", "Azure", "OpenAI", "API", "Machine Learning", "Web App"],
+  },
+  {
     year: "2024",
     title: "Cloud Solutions Developer",
     company: "Deloitte",
-    description:
-      "Designed and implemented API endpoints for Kubernetes cluster provisioning in Azure using AKS, streamlining user deployment processes. Followed OpenAPI specifications for consistent API design, ensuring seamless integration with existing services. Assisted in training a GenAI bot on internal documentation, improving team members' access to accurate responses.",
+    bullets: [
+      "Designed and implemented API endpoints for Kubernetes cluster provisioning in Azure using AKS, streamlining user deployment processes",
+      "Followed OpenAPI specifications for consistent API design, ensuring seamless integration with existing services",
+      "Assisted in training a GenAI bot on internal documentation, improving team members' access to accurate responses",
+    ],
     tags: ["Azure", "AKS", "Kubernetes", "OpenAPI", "GenAI"],
   },
   {
     year: "2023",
     title: "Cloud Platform Developer",
     company: "Deloitte",
-    description:
-      "Developed scripts to improve AWS account management, reducing maintenance time and simplifying policy detachment. Deployed scripts on AWS Lambda and managed queues with Amazon SQS, enhancing event processing efficiency by 50%. Implemented an IP Address Management feature for GCP accounts with Supernet IP Usage Monitoring and Threshold Alerting.",
+    bullets: [
+      "Developed scripts to improve AWS account management, reducing maintenance time and simplifying policy detachment",
+      "Deployed scripts on AWS Lambda and managed queues with Amazon SQS, enhancing event processing efficiency by 50%",
+      "Implemented an IP Address Management feature for GCP accounts with Supernet IP Usage Monitoring and Threshold Alerting",
+    ],
     tags: ["AWS", "Lambda", "SQS", "GCP", "Python"],
   },
   {
     year: "2022",
     title: "Cloud API Developer",
     company: "Deloitte",
-    description:
-      "Reduced deployment time by 84% by switching from AWS CloudFormation to HashiCorp Terraform. Created API endpoints with OpenAPI specs, enhancing functionality and integration accuracy. Dockerized applications and integrated with GitHub Codespaces, accelerating onboarding by up to 80%.",
+    bullets: [
+      "Reduced deployment time by 84% by switching from AWS CloudFormation to HashiCorp Terraform",
+      "Created API endpoints with OpenAPI specs, enhancing functionality and integration accuracy",
+      "Dockerized applications and integrated with GitHub Codespaces, accelerating onboarding by up to 80%",
+    ],
     tags: ["Terraform", "Docker", "GitHub Actions", "Azure DevOps", "AWS"],
   },
 ];
@@ -52,9 +74,17 @@ export function Experience() {
                     {exp.title}{" "}
                     <span className="text-accent">@ {exp.company}</span>
                   </h3>
-                  <p className="mt-3 leading-relaxed text-muted-foreground">
-                    {exp.description}
-                  </p>
+                  <ul className="mt-3 list-inside space-y-2">
+                    {exp.bullets.map((bullet, idx) => (
+                      <li
+                        key={idx}
+                        className="flex gap-3 text-muted-foreground"
+                      >
+                        <span className="shrink-0 text-accent">•</span>
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {exp.tags.map((tag) => (
                       <span
