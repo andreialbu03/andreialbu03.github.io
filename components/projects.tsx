@@ -10,8 +10,8 @@ const projects = [
   {
     title: "CareBridge",
     description:
-      "A healthcare tool using AI to simplify medical documents and enhance communication. Leveraging OpenAI's GPT model, it translates complex jargon into plain English with AI-driven text extraction for reliable health insights.",
-    tags: ["AI", "OpenAI", "Healthcare"],
+      "A full-stack healthcare platform translating medical terminology into patient-friendly explanations using GPT and AWS Textract. Built with FastAPI and React Native, deployed on AWS ECS Fargate behind an Application Load Balancer for scalable, stateless API execution.",
+    tags: ["FastAPI", "React Native", "GPT", "AWS ECS", "Docker"],
   },
   {
     title: "Covi",

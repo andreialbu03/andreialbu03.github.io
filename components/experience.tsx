@@ -1,49 +1,47 @@
 const experiences = [
   {
     year: "2025",
-    title: "Tech Software Consultant",
+    title: "Software Engineer",
     company: "Deloitte",
     bullets: [
-      "Built the initial RCSA (Risk and Control Self-Assessment) proof of concept, securing a $1M engagement",
-      "Led development of an end-to-end Python-based RCSA web application deployed on Azure App Service, reducing manual assessment effort by 55%",
-      "Designed API endpoints leveraging GPT-4 mini hosted on Azure AI Foundry to automate process map analysis and risk mapping",
-      "Built an Azure OpenAI-powered validation engine that assessed 665+ controls against enterprise governance standards, reducing QA review time by 60%",
-      "Increased control rationalization efficiency by 30% using DBSCAN-based clustering",
+      "Built and owned a production RCSA platform (Python, Flask) on Azure, designing data ingestion and normalization pipelines for multi-source process data, reducing manual assessment effort by 55% across a 14-member team",
+      "Integrated GPT models via Azure AI Foundry into backend pipelines to extract structured process steps and map sub-risks, using parallel request handling and post-processing to increase throughput by 60%",
+      "Designed API layer and workflow orchestration for risk identification, control mapping, and residual risk scoring, scaling from prototype to deployment that secured a $1M client engagement",
+      "Developed a validation engine assessing 665+ enterprise controls using DBSCAN clustering for semantic grouping, reducing QA review time by 60% and improving control rationalization by 30%",
     ],
-    tags: ["Python", "Azure", "OpenAI", "API", "Machine Learning", "Web App"],
+    tags: ["Python", "Flask", "Azure", "GPT", "DBSCAN", "API"],
   },
   {
     year: "2024",
-    title: "Cloud Solutions Developer",
+    title: "Software Engineer",
+    company: "Cirrus Labs",
+    bullets: [
+      "Scaled a centralized IPAM platform integrating AWS and Azure APIs, extending automated IP oversight across 15,000+ cloud accounts and reducing manual configuration errors and drift",
+      "Migrated 10 production repositories from GCP to GitHub, re-engineering CI/CD pipelines and standardizing deployments across three environments while unifying developer tooling across teams",
+    ],
+    tags: ["AWS", "Azure", "GCP", "CI/CD", "GitHub"],
+  },
+  {
+    year: "2024",
+    title: "Software Engineering Intern",
     company: "Deloitte",
     bullets: [
-      "Designed and implemented API endpoints for Kubernetes cluster provisioning in Azure using AKS, streamlining user deployment processes",
-      "Followed OpenAPI specifications for consistent API design, ensuring seamless integration with existing services",
-      "Assisted in training a GenAI bot on internal documentation, improving team members' access to accurate responses",
+      "Architected and deployed RESTful API endpoints (FastAPI) to automate Azure Kubernetes cluster provisioning, replacing manual processes with self-serve infrastructure access consumed by multiple engineering teams",
+      "Developed internal RAG-based AI assistant using Azure AI Search and vector embeddings to index proprietary documentation and enable fast, context-aware knowledge retrieval",
+      "Containerized development environments using Docker and GitHub Codespaces, standardizing local setup and reducing developer onboarding time by 65%",
     ],
-    tags: ["Azure", "AKS", "Kubernetes", "OpenAPI", "GenAI"],
+    tags: ["FastAPI", "Azure", "AKS", "Docker", "RAG", "AI"],
   },
   {
     year: "2023",
-    title: "Cloud Platform Developer",
+    title: "Cloud Software Engineering Intern",
     company: "Deloitte",
     bullets: [
-      "Developed scripts to improve AWS account management, reducing maintenance time and simplifying policy detachment",
-      "Deployed scripts on AWS Lambda and managed queues with Amazon SQS, enhancing event processing efficiency by 50%",
-      "Implemented an IP Address Management feature for GCP accounts with Supernet IP Usage Monitoring and Threshold Alerting",
+      "Migrated legacy CloudFormation templates to modular HashiCorp Terraform configurations, cutting cloud infrastructure deployment time by 84% through reusable components",
+      "Built event-driven Python services with AWS Lambda and SQS to orchestrate policy detachment across 9,000+ accounts, implementing retries with exponential backoff and DynamoDB-based distributed locking",
+      "Implemented GCP IPAM automation enabling real-time IP utilization monitoring and subnet exhaustion alerts, reducing manual oversight and improving network visibility",
     ],
-    tags: ["AWS", "Lambda", "SQS", "GCP", "Python"],
-  },
-  {
-    year: "2022",
-    title: "Cloud API Developer",
-    company: "Deloitte",
-    bullets: [
-      "Reduced deployment time by 84% by switching from AWS CloudFormation to HashiCorp Terraform",
-      "Created API endpoints with OpenAPI specs, enhancing functionality and integration accuracy",
-      "Dockerized applications and integrated with GitHub Codespaces, accelerating onboarding by up to 80%",
-    ],
-    tags: ["Terraform", "Docker", "GitHub Actions", "Azure DevOps", "AWS"],
+    tags: ["Terraform", "AWS Lambda", "SQS", "DynamoDB", "GCP", "Python"],
   },
 ];
 
@@ -58,9 +56,9 @@ export function Experience() {
         </h2>
 
         <div className="flex flex-col gap-8">
-          {experiences.map((exp) => (
+          {experiences.map((exp, idx) => (
             <div
-              key={exp.year}
+              key={idx}
               className="group relative rounded-xl border border-transparent p-6 transition-all hover:border-border hover:bg-card/50"
             >
               <div className="flex flex-col gap-4 sm:flex-row sm:gap-8">

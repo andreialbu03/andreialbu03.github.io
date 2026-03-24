@@ -14,9 +14,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Andrei Albu | Cloud Developer & CS Student",
+  title: "Andrei Albu | Software Engineer",
   description:
-    "Personal portfolio of Andrei Albu - Cloud Developer at Deloitte and Computer Science student at McMaster University.",
+    "Personal portfolio of Andrei Albu - Software Engineer at Deloitte specializing in cloud infrastructure, API development, and DevOps automation.",
 };
 
 export const viewport: Viewport = {

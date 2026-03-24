@@ -11,18 +11,16 @@ export function About() {
         <div className="flex flex-col gap-12 md:flex-row md:gap-16">
           <div className="flex-1">
             <p className="leading-relaxed text-muted-foreground">
-              I&apos;m an ambitious and driven computer science graduate with a
-              passion for cloud technologies and software development. I&apos;ve
-              completed my degree at{" "}
-              <span className="text-foreground font-medium">
-                McMaster University
-              </span>{" "}
-              and{" "}
+              I&apos;m an ambitious and driven computer science graduate from{" "}
               <span className="text-foreground font-medium">
                 Athabasca University
-              </span>
-              , and I&apos;ve built real-world experience through multiple roles
-              at Deloitte working on cloud infrastructure and API development.
+              </span>{" "}
+              (Great Distinction) with a passion for cloud technologies and
+              software engineering. I&apos;ve built production systems at{" "}
+              <span className="text-foreground font-medium">Deloitte</span> and{" "}
+              <span className="text-foreground font-medium">Cirrus Labs</span>,
+              working across cloud infrastructure, API development, and AI
+              integration.
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
               I&apos;ve attended hackathons like{" "}
@@ -30,19 +28,19 @@ export function About() {
               enjoy pushing myself to learn new technologies and tackle complex
               problems. Outside of tech, you can find me rock climbing, which I
               love because it combines physical activity with
-              problem-solving—much like coding itself.
+              problem-solving, much like coding itself.
             </p>
             <p className="mt-6 text-sm text-muted-foreground">
               Here are some technologies I&apos;ve been working with:
             </p>
             <ul className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2">
               {[
-                "AWS (Lambda, SQS, CloudFormation)",
-                "Azure (AKS, DevOps)",
-                "Google Cloud Platform",
-                "Terraform / IaC",
+                "Python, Java, TypeScript",
+                "AWS, Azure, GCP",
                 "Docker & Kubernetes",
-                "Python & TypeScript",
+                "Terraform / IaC",
+                "FastAPI, React, Flask",
+                "CI/CD & GitHub Actions",
               ].map((tech) => (
                 <li
                   key={tech}
