@@ -19,8 +19,10 @@ export function About() {
               software engineering. I&apos;ve built production systems at{" "}
               <span className="text-foreground font-medium">Deloitte</span> and{" "}
               <span className="text-foreground font-medium">Cirrus Labs</span>,
-              working across cloud infrastructure, API development, and AI
-              integration.
+              working across cloud infrastructure, API development, and
+              applied AI/LLM integration, including GenAI inference
+              pipelines, RAG assistants, and embedding-based clustering
+              systems running in production.
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
               I&apos;ve attended hackathons like{" "}
@@ -41,6 +43,8 @@ export function About() {
                 "Terraform / IaC",
                 "FastAPI, React, Flask",
                 "CI/CD & GitHub Actions",
+                "LLMs / GenAI Pipelines",
+                "Vector Search (pgvector)",
               ].map((tech) => (
                 <li
                   key={tech}

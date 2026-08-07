@@ -11,13 +11,14 @@ export function Hero() {
             <span className="text-balance">Andrei Albu.</span>
           </h1>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-muted-foreground sm:text-4xl lg:text-5xl">
-            <span className="text-balance">I build things for the cloud.</span>
+            <span className="text-balance">I build backend systems that scale.</span>
           </h2>
           <p className="mt-6 max-w-lg leading-relaxed text-muted-foreground">
             Software Engineer at{" "}
             <span className="text-foreground font-medium">Deloitte</span>. I
-            specialize in API development, cloud infrastructure, and DevOps
-            automation.
+            specialize in API development, cloud infrastructure, and applied
+            AI/LLM systems, from RESTful microservices to GenAI-powered data
+            pipelines.
           </p>
 
           {/* Social links */}

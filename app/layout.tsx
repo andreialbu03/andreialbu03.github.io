@@ -13,10 +13,29 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
 });
 
+const siteUrl = "https://andreialbu03.github.io";
+const title = "Andrei Albu | Software Engineer";
+const description =
+  "Personal portfolio of Andrei Albu - Software Engineer at Deloitte specializing in cloud infrastructure, API development, and applied AI/LLM systems.";
+
 export const metadata: Metadata = {
-  title: "Andrei Albu | Software Engineer",
-  description:
-    "Personal portfolio of Andrei Albu - Software Engineer at Deloitte specializing in cloud infrastructure, API development, and DevOps automation.",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    url: siteUrl,
+    siteName: "Andrei Albu",
+    images: [{ url: "/images/pfp.jpg", width: 800, height: 800, alt: "Andrei Albu" }],
+    type: "profile",
+  },
+  twitter: {
+    card: "summary",
+    title,
+    description,
+    images: ["/images/pfp.jpg"],
+  },
 };
 
 export const viewport: Viewport = {
@@ -35,6 +54,27 @@ export default function RootLayout({
           // Synchronously set theme class from localStorage before React hydrates
           dangerouslySetInnerHTML={{
             __html: `(() => { try { const t = localStorage.getItem('theme'); if (t === 'dark') document.documentElement.classList.add('dark'); else document.documentElement.classList.remove('dark'); } catch(e){} })();`,
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Andrei Albu",
+              url: siteUrl,
+              jobTitle: "Software Engineer",
+              worksFor: {
+                "@type": "Organization",
+                name: "Deloitte",
+              },
+              sameAs: [
+                "https://github.com/andreialbu03",
+                "https://www.linkedin.com/in/andrei-albu-cs/",
+                "https://devpost.com/andrei-albu03",
+              ],
+            }),
           }}
         />
         <ThemeProvider>{children}</ThemeProvider>

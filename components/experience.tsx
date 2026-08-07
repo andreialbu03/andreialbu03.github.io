@@ -34,14 +34,24 @@ const experiences = [
   },
   {
     year: "2023",
-    title: "Cloud Software Engineering Intern",
+    title: "Cloud Platform Software Engineering Intern",
+    company: "Deloitte",
+    bullets: [
+      "Built event-driven Python microservices with AWS Lambda and SQS to orchestrate IAM policy detachment across 10,000+ accounts, implementing retries with exponential backoff and DynamoDB-based distributed locking to handle concurrent consumers and ensure idempotent execution",
+      "Implemented GCP IPAM automation enabling real-time IP utilization monitoring and subnet exhaustion alerts, reducing manual oversight and improving network visibility",
+      "Developed RESTful API endpoints in FastAPI for cloud resource provisioning, using a design-first approach with OpenAPI specs",
+    ],
+    tags: ["AWS Lambda", "SQS", "DynamoDB", "GCP", "FastAPI", "Python"],
+  },
+  {
+    year: "2022",
+    title: "Cloud Platform Software Engineering Intern",
     company: "Deloitte",
     bullets: [
       "Migrated legacy CloudFormation templates to modular HashiCorp Terraform configurations, cutting cloud infrastructure deployment time by 84% through reusable components",
-      "Built event-driven Python services with AWS Lambda and SQS to orchestrate policy detachment across 9,000+ accounts, implementing retries with exponential backoff and DynamoDB-based distributed locking",
-      "Implemented GCP IPAM automation enabling real-time IP utilization monitoring and subnet exhaustion alerts, reducing manual oversight and improving network visibility",
+      "Piloted AWS ECS over serverless alternatives for hosting a persistent FastAPI service, avoiding Lambda cold-start latency and execution limits while integrating an Application Load Balancer and DocumentDB",
     ],
-    tags: ["Terraform", "AWS Lambda", "SQS", "DynamoDB", "GCP", "Python"],
+    tags: ["Terraform", "AWS ECS", "FastAPI", "DocumentDB", "IaC"],
   },
 ];
 

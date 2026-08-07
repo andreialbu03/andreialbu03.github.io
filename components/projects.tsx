@@ -2,6 +2,13 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    title: "Palate",
+    description:
+      "A full-stack food recommendation app with a decoupled FastAPI service layer, Supabase Postgres/pgvector for semantic search, and Cloudflare R2 for scalable image storage. Layered recommendation pipeline (vector retrieval, allergy/dietary filtering, mood reranking, feedback-driven taste embeddings) improved top-result relevance by 15% and reduced incompatible suggestions by 20%.",
+    tags: ["FastAPI", "Supabase", "pgvector", "LiteLLM", "React Native", "Cloudflare R2", "Docker"],
+    featured: true,
+  },
+  {
     title: "Stockhome",
     description:
       "A complete financial website offering stock tracking features, information about investing and more. Helps investors build their personal wealth with up-to-date information and statistics about the latest stocks.",
@@ -12,12 +19,6 @@ const projects = [
     description:
       "A full-stack healthcare platform translating medical terminology into patient-friendly explanations using GPT and AWS Textract. Built with FastAPI and React Native, deployed on AWS ECS Fargate behind an Application Load Balancer for scalable, stateless API execution.",
     tags: ["FastAPI", "React Native", "GPT", "AWS ECS", "Docker"],
-  },
-  {
-    title: "Covi",
-    description:
-      "A comprehensive Covid-19 Discord bot built with Python. Uses Discord.py, Serpapi for Google News scraping, and Disease.sh API for local and global Covid-19 statistics.",
-    tags: ["Python", "Discord.py", "API"],
   },
 ];
 
@@ -35,25 +36,36 @@ export function Projects() {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="group flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-all hover:border-accent/30 hover:-translate-y-1"
+              className={`group flex flex-col rounded-xl border p-6 transition-all hover:-translate-y-1 ${
+                project.featured
+                  ? "border-accent/40 bg-accent/5 shadow-sm hover:border-accent/60 sm:col-span-2 lg:col-span-3"
+                  : "border-border bg-card/50 hover:border-accent/30"
+              }`}
             >
               {/* Top icon row */}
               <div className="mb-6 flex items-center justify-between">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-10 w-10 text-accent"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={1}
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
-                  />
-                </svg>
+                <div className="flex items-center gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-10 w-10 text-accent"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={1}
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                    />
+                  </svg>
+                  {project.featured && (
+                    <span className="rounded-full bg-accent px-3 py-1 font-mono text-xs font-semibold text-background">
+                      Featured
+                    </span>
+                  )}
+                </div>
                 <div className="flex items-center gap-3">
                   <a
                     href="https://github.com/andreialbu03"

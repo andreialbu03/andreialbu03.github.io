@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer id="contact" className="px-6 pb-12 pt-24">
       <div className="mx-auto max-w-md text-center">
-        <p className="font-mono text-sm text-accent">04. What&apos;s Next?</p>
+        <p className="font-mono text-sm text-accent">05. What&apos;s Next?</p>
         <h2 className="mt-4 text-4xl font-bold text-foreground">
           Get In Touch
         </h2>
