@@ -18,7 +18,7 @@ export function Hobbies() {
     <section id="hobbies" className="px-6 py-24">
       <div className="mx-auto max-w-5xl">
         <h2 className="mb-12 flex items-center gap-4 text-2xl font-bold text-foreground">
-          <span className="font-mono text-sm font-normal text-accent">04.</span>
+          <span className="font-mono text-sm font-normal text-accent">05.</span>
           Interests & Hobbies
           <span className="h-px flex-1 bg-border" />
         </h2>

@@ -17,6 +17,7 @@ export default function Home() {
         <Projects />
         <About />
         <Certifications />
+        {/* When enabling Hobbies, also update footer section number to "06." */}
         {/* <Hobbies /> */}
         <Footer />
       </main>
